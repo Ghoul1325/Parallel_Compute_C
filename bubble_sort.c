@@ -2,12 +2,13 @@
 
 int main()
 {
-    double vec[10];
+    float vec[10];
+	printf("Hello, This is Bubble, \nPlease input 10 numbers to be sorted:\n");
     for (int i = 0; i < 10; i++)
     {
-        scanf("Please input 10 numbers: %d\n", &vec[i]);
+        scanf("%f", &vec[i]);
     }
-    
+	
 
     return 0;
 }
