@@ -3,12 +3,25 @@
 int main()
 {
     float vec[10];
+    float temp;
 	printf("Hello, This is Bubble, \nPlease input 10 numbers to be sorted:\n");
     for (int i = 0; i < 10; i++)
     {
         scanf("%f", &vec[i]);
     }
-	
+	for (int i =0; i < 9; i++)
+    {
+        for (int j = 0; j < 9 - i; j++)
+        {
+            if (vec[j] > vec[j+1])
+            {
+                temp = vec[j+1];
+                vec[j+1] = vec[j];
+                vec[j] = temp;
+            }
+        }
+        print(vec[9-i]);
+    }
 
     return 0;
 }
