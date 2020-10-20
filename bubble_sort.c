@@ -9,7 +9,7 @@ int main()
     {
         scanf("%f", &vec[i]);
     }
-	for (int i =0; i < 9; i++)
+	for (int i = 0; i < 9; i++)
     {
         for (int j = 0; j < 9 - i; j++)
         {
@@ -20,8 +20,13 @@ int main()
                 vec[j] = temp;
             }
         }
-        print(vec[9-i]);
     }
+	
+	printf("Bubble sorted result: \n");
+	for (int i = 0; i < 10; i++)
+	{
+		printf("%f ", vec[i]);
+	}
 
     return 0;
 }
